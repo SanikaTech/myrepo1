@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <!-- website font  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{%static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/animate.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/stylee.css' %}" />
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <!-- Navbar 2 Start -->
+    <section id="Nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="{%static 'image/logo.png' %}" width="18%"></img>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               
+                <button class="btn signup" onclick= "window.location.href = '#';">New Account</button>
+                <button class="btn login" onclick= "window.location.href = 'lgn';">Login</button>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar 2 End -->
+
+    <!-- Navigator Start -->
+    <section id="navigator">
+        <div class="container">
+            <div class="path">
+                <div class="path-main" style="color: darkred; display:inline-block;">Home</div>
+                <div class="path-directio" style="color: grey; display:inline-block;"> / Sign up</div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Navigator End -->
+
+    <!-- Sign Up Start -->
+    <section id="sign-up">
+        <div class="container">
+                <img src="{%static 'imgs/logo.png' %}" alt="">
+               <form action="{% url 'tksig' %}" method="POST">
+                       {%csrf_token%}
+                    <input name="name" placeholder="Name" required>
+                    <input type="email"  name="email" placeholder="Email" required>
+                    <input type="date" name="bday" placeholder="Birth date">
+                    <input type="Phone" placeholder="Phone Number" name="phno" required="">
+                    <div class="reg-group">
+                        <input class="check" type="checkbox" required="" style="height: auto; display:inline; margin: 0 auto;">Agree on terms and conditions<br>
+                        <button class="submit" type="submit" style="background-color: rgb(51, 58, 65);">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <!-- Sign Up End -->
+
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{%static 'https://code.jquery.com/jquery-3.2.1.min.js' %}"></script>
+    <script src="{%static 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{%static 'js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{%static 'js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{%static 'js/main.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Pet Food Website Design Tutorial</title>
+   
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet"  href="{% static 'css/style3.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+     <link rel="stylesheet"  href="{% static 'css/style2.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paw"></i> shop </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#shop">shop</a>
+        <a href="#services">services</a>
+        <a href="#plan">plan</a>
+        <a href="#contact">contact</a>
+         <a href="feed">Feedback</a>
+</nav>
+        
+<div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="ord" class="fas fa-gift"></a>
+       <div class="fas fa-user" id="login-btn"></div>
+       <div class="shopping">
+       <div class="fa fa-shopping-cart" id="addToCard"></div>
+        <span class="quantity">0</span>
+         </div>
+       
+    </div>
+
+    <form action="" class="login-form">
+   
+     <!-- Navbar 2 Start -->
+    <section id="Nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="{% static 'image/logo1.png' %}" width="70%">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <a href="lgn" class="btn">Login</a>
+                 <a href="sgn" class="btn">New Account</a>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar 2 End -->
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3> <span>hi</span> welcome to our pet food shop </h3>
+        <a href="#shop" class="btn">shop now</a>
+    </div>
+
+    <img src="{% static 'image/bottom_wave.png' %}" class="wave" alt="">
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="{% static 'image/about_img.png' %}" alt="">
+    </div>
+
+    <div class="content">
+        <h3>premium <span>pet food</span> manufacturer</h3>
+        <p>Pet foods have been manufactured since the 2021s in the India, and today there are manufacturing plants in most developed countries.</p>
+        <a href="inf" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- dog and cat food banner section starts -->
+
+<div class="dog-food">
+
+    <div class="image">
+        <img src="{% static 'image/dog_food.png' %}" alt="">
+    </div>
+
+    <div class="content">
+        <h3> <span>air dried</span> dog food </h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat iure illo, repudiandae rem porro sunt.</p>
+        <div class="amount">Rs50.00 - Rs100.00</div>
+        <a href="#"> <img src="{% static 'image/shop_now_dog.png' %}" alt=""> </a>
+    </div>
+
+</div>
+
+<div class="cat-food">
+
+    <div class="content">
+        <h3> <span>air dried</span> cat food </h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat iure illo, repudiandae rem porro sunt.</p>
+        <div class="amount">Rs50.00 - Rs100.00</div>
+        <a href="#"> <img src="{%static 'image/shop_now_cat.png' %}" alt=""> </a>
+    </div>
+
+    <div class="image">
+        <img src="{%static 'image/cat_food.png' %}" alt="">
+    </div>
+
+</div>
+
+<!-- dog and cat food banner section ends -->
+
+<!-- shop section starts  -->
+
+<section class="shop" id="shop">
+
+    <h1 class="heading"> our <span> products </span> </h1>
+
+    <div class="container">
+       <div class="list">
+       </div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-dog"></i>
+            <h3>dog boarding</h3>
+            <a href="dog" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-cat"></i>
+            <h3>cat boarding</h3>
+            <a href="cat" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bath"></i>
+            <h3>spa & grooming</h3>
+            <a href="spa" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-drumstick-bite"></i>
+            <h3>healthy meal</h3>
+            <a href="meal" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-baseball-ball"></i>
+            <h3>activity exercise</h3>
+            <a href="act" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>health care</h3>
+            <a href="health" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- plan section starts  -->
+
+<section class="plan" id="plan">
+
+    <h1 class="heading"> choose a <span>plan</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">pet care</h3>
+            <h3 class="day"> 1 day </h3>
+            <i class="fas fa-bicycle icon"></i>
+            <div class="list">
+                <p> pet room <span class="fas fa-check"></span> </p>
+                <p> pet grooming <span class="fas fa-check"></span> </p>
+                <p> pet exercise <span class="fas fa-check"></span> </p>
+                <p> pet meals <span class="fas fa-check"></span> </p>
+            </div>
+            <div class="amount"><span>Rs</span>150</div>
+            <a href="#" class="btn"> choose plan </a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">pet care</h3>
+            <h3 class="day"> 10 days </h3>
+            <i class="fas fa-motorcycle icon"></i>
+            <div class="list">
+                <p> pet room <span class="fas fa-check"></span> </p>
+                <p> pet grooming <span class="fas fa-check"></span> </p>
+                <p> pet exercise <span class="fas fa-check"></span> </p>
+                <p> pet meals <span class="fas fa-check"></span> </p>
+            </div>
+            <div class="amount"><span>Rs</span>350</div>
+            <a href="#" class="btn"> choose plan </a>
+        </div>
+
+        <div class="box">
+            <h3 class="title">pet care</h3>
+            <h3 class="day"> 30 days </h3>
+            <i class="fas fa-car-side icon"></i>
+            <div class="list">
+                <p> pet room <span class="fas fa-check"></span> </p>
+                <p> pet grooming <span class="fas fa-check"></span> </p>
+                <p> pet exercise <span class="fas fa-check"></span> </p>
+                <p> pet meals <span class="fas fa-check"></span> </p>
+            </div>
+            <div class="amount"><span>Rs</span>650</div>
+            <a href="#" class="btn"> choose plan </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- plan section ends -->
+
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="{%static 'image/contact_img.png' %}" alt="">
+    </div>
+
+    <form action="{% url 'rcv' %}"  method="POST">
+        {% csrf_token  %}
+        <h3>contact us</h3>
+        <input type="text" placeholder="Your name" class="box"  name="name">
+        <input type="email" placeholder="Your email" class="box" name="email">
+        <input type="tumber" placeholder="Your number" class="box" name="phone">
+        <textarea  name="message" placeholder="Your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<section class="footer">
+
+    <img src="{% static 'image/top_wave.png' %}" alt="">
+
+    <div class="share">
+        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+    </div>
+
+    <div class="credit"> created by <span> website designer </span> | all rights reserved! </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="{% static 'js/script.js' %}"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'https://code.jquery.com/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+</body>
+</html>
